@@ -6,7 +6,7 @@ import lombok.Getter;
 public abstract class AbstractCommand<T> implements Command<T> {
     private Status status = Status.NONE;
     private T result = null;
-    private Exception exception;
+    private Exception exception = null;
 
     protected abstract T executeInner();
 
