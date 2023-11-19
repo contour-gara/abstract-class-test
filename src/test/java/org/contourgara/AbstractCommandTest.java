@@ -11,7 +11,7 @@ import static org.mockito.Mockito.doThrow;
 
 class AbstractCommandTest {
     @Spy
-    AbstractCommand abstractCommand;
+    AbstractCommand<?> abstractCommand;
 
     @BeforeEach
     void setUp() {
